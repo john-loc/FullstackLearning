@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Text Effects</title>
+    <style>
+      .bluebox{
+        background-color: #37579A;
+        color: white;
+        height: 100px;
+        width: auto;
+      /*  visibility: hidden;*/
+    /*  display: none; */
+      /* text-decoration: underline; */
+      /* font-weight: bold; */
+      /* text-align: center; */
+      font-size: 100px;
+      font-family: sans-serif;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+      .bluebox:hover{
+        overflow:visible;
+      }
+
+      .yellowbox {
+        background-color: rgb(222,224,85);
+        height: 100px;
+        width: 700px;
+        color: black;
+        /* text-decoration: overline; */
+        /* font-style: italic; */
+        font-size: 16px;
+        font-family: monospace;
+        /* word-break: break-all; */
+        /* word-break: keep-all; */
+        overflow: hidden;
+        text-overflow: ellipsis;
+        /* white-space: nowrap; */
+
+      }
+      .yellowbox:hover{
+        overflow:visible;
+      }
+      .greenbox {
+        background-color: rgb(30, 115, 89);
+        height: 100px;
+        width: auto;
+        color: rgb(254, 254, 254);
+        /* text-indent: 30px; */
+        font-size: 100px;
+        font-family:"Times New Roman", Times, serif;
+      }
+      .great {
+        background-color: #5a3479;
+        /* display: block; */
+        letter-spacing: 10px;
+        text-shadow: 3px 3px 3px black;
+
+      }
+    </style>
+  </head>
+  <body>
+  <div class="bluebox">
+    Facebook FACEBOOK dooo dooo dooo
+  </div>
+  <div class="yellowbox">
+    Apple apple apple apple apple apple hereisalongwordkeepingonggoingsothen it breaks appple apple aplle aplle lnnngggg   Apple apple apple apple apple apple hereisalongwordkeepingonggoingsothen it breaks appple apple aplle aplle lnnngggg  Apple apple apple apple apple apple hereisalongwordkeepingonggoingsothen it breaks appple apple aplle aplle lnnngggg  Apple apple apple apple apple apple hereisalongwordkeepingonggoingsothen it breaks appple apple aplle aplle lnnngggg
+  </div>
+  <div class="greenbox">
+    <p>Microsoft.</p>
+  </div>
+  </body>
+</html>
