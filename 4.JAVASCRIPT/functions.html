@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Html Using variables</title>
+    <style>
+      .bluebox{
+        background-color: #37579A;
+        color: white;
+        height: 100px;
+        width: auto;
+      }
+      .yellowbox {
+        background-color: rgb(222,224,85);
+        height: 100px;
+        width: auto;
+        color: black;
+      }
+      .greenbox {
+        background-color: rgb(30, 115, 89);
+        height: 100px;
+        width: auto;
+        color: rgb(254, 254, 254);
+      }
+      .sucky {
+        background-color: black;
+      }
+    </style>
+  </head>
+  <body>
+  <div class="bluebox" id="facebook">
+    <p>Facebook.</p>
+    <p>Facebook is <span class="sucky">sucky</span></p>
+  </div>
+  <div class="yellowbox" id="apple">
+    <p>Apple.</p>
+  </div>
+  <div class="greenbox" id="microsoft">
+    <p>Microsoft.</p>
+  </div>
+  <button id ="button1" onclick ="swap('facebook', 'apple')">Swap content of facebook and Apple</button>
+  <button id ="button2" onclick ="swap('apple', 'microsoft')">Swap content of apple and microsoft</button>
+  <button id ="button3">Change the Microsoft Content</button>
+
+    <script>
+      function greeting1() {
+          window.alert('Hello!');
+      }
+    //   greeting1();
+
+      function greeting2(firstName){
+          window.alert('Hello ' + firstName + '!');
+      }
+    //   greeting2('John');
+
+      function sum(a,b){
+          return a + b;
+      }
+      var x = sum(3,7);
+      window.alert(x);
+
+      function swap(id1, id2){
+          var y = document.getElementById(id1).innerHTML; 
+          var z = document.getElementById(id2).innerHTML; 
+      
+      document.getElementById(id2).innerHTML = y; 
+      document.getElementById(id1).innerHTML = z; 
+      }
+    </script> 
+  
+  </body>
+</html>
